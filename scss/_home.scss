@@ -81,3 +81,69 @@
         }
     }
 }
+
+.s-card-neon {
+    padding-top: 12.9rem;
+    .left-area {
+        width: 100%;
+        max-width: 27.7rem;
+        .ilustra-mockup {
+            position: relative;
+            width: 100%;
+            max-width: 27.7rem;
+            margin-bottom: 12.9rem;
+            .circle {
+                position: absolute;
+                top: 8.7rem;
+                left: -21.4rem;
+                max-width: 37.7rem;
+                z-index: -1;
+            }
+        }
+        .text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .icon {
+                position: relative;
+                &:before {
+                    content: "";
+                    width: 5px;
+                    height: 83px;
+                    background: url("../img/points.svg") no-repeat center center;
+                    display: inline-block;
+                    position: absolute;
+                    top: -104px;
+                    left: 50%;
+                    margin-left: -2.5px;
+                }
+            }
+            .info-txt {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    margin-top: 3.6rem;
+                    color: $gray-600;
+                    font-weight: 500;
+                }
+                p {
+                    text-align: center;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    color: $gray-400;
+                    opacity: 0.8;
+                    margin-bottom: 2.6rem;
+                }
+                ul {
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 2.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
