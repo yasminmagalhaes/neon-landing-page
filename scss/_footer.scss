@@ -27,4 +27,47 @@ footer {
             }
         }
     }
+    .main {
+        @include flex(row, flex-start, space-between);
+        nav {
+            width: 100%;
+            max-width: 86rem;
+            @include flex(row, flex-start, space-between);
+            .item {
+                strong {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 125%;
+                    color: #FFFFFF;
+                    display: inline-block;
+                    margin-bottom: 2.5rem;
+                }
+                ul {
+                    li {
+                        &:not(:last-child){
+                            margin-bottom: 2.9rem;
+                        }
+                        a {
+                            font-size: 1.4rem;
+                            line-height: 1.7rem;
+                            color: rgba(255, 255, 255, 0.7);
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .btns {
+            width: 100%;
+            max-width: 28rem;
+            button {
+                background-color: rgba(0, 164, 240, 0.23);
+                border-radius: 6px;
+                &:not(:last-child){
+                    margin-bottom: 2.4rem;
+                }
+            }
+        }
+    }
 }
